@@ -15,8 +15,101 @@
 </head>
 
 <body>
-    <header>
-        <h1>Project setup finished and ready to code now</h1>
+    <header class="container mx-auto">
+        <!-- Navbar stars -->
+        <nav class="mb-8">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a class="text-[#030712B2] font-raleway text-lg font-medium">Home</a></li>
+                            <li><a class="text-[#030712B2] font-raleway text-lg font-medium">About</a></li>
+                            <li><a class="text-[#030712B2] font-raleway text-lg font-medium">Destination</a></li>
+                            <li><a class="text-[#030712B2] font-raleway text-lg font-medium">Search</a></li>
+                        </ul>
+                    </div>
+                    <a
+                        class="btn btn-ghost text-3xl lg:text-4xl font-extrabold text-[#030712] font-raleway">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-[#030712B2] font-raleway text-lg font-medium">Home</a></li>
+                        <li><a class="text-[#030712B2] font-raleway text-lg font-medium">About</a></li>
+                        <li><a class="text-[#030712B2] font-raleway text-lg font-medium">Destination</a></li>
+                        <li><a class="text-[#030712B2] font-raleway text-lg font-medium">Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-[#1DD100] font-raleway text-xl font-bold bg-[#1DD1001A] border-[#1DD10066]">Bus
+                        <span><img src="Styles/images/bus-icon.png" alt=""></span></a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar ends -->
+
+        <!-- Header banner stars -->
+        <div class="mx-2 lg:mx-auto mb-5 lg:mb-32 relative">
+            <div class="hero h-[80vh] rounded-[36px]"
+                style="background-image: url('Styles/images/banner.png'); background-repeat: no-repeat; background-size: contain 100%; object-fit: cover; background-blend-mode: multiply; overflow: hidden;">
+                <div class="hero-overlay bg-opacity-20"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="">
+                        <h1 class="mb-3 lg:mb-5 text-white font-raleway text-3xl lg:text-6xl font-extrabold">End-to-End
+                            Travel with
+                            <br>
+                            <span class="text-[#1DD100]">P Paribahan</span>
+                        </h1>
+                        <div class="lg:max-w-3xl">
+                            <p class="mb-3 lg:mb-5 text-white font-inter text-base lg:text-lg font-normal">P Ticket is
+                                premium
+                                online
+                                booking
+                                portal which allows you to purchase ticket
+                                for various
+                                bus services, launch
+                                services, movies
+                                and events across the country</p>
+                        </div>
+                        <button
+                            class="btn btn-primary text-[#030712] bg-[#1DD100] border-none text-xl font-bold font-raleway">Buy
+                            Tickets</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Banner cards -->
+            <div class="lg:flex justify-between items-center lg:absolute lg:-bottom-14 lg:left-40 lg:gap-6">
+                <div class="bg-white flex w-[300px] border-b-4 border-[#1DD100] rounded-3xl p-8 gap-4 items-center">
+                    <img src="Styles/images/people.png" alt="">
+                    <div class="">
+                        <h3 class="font-inter text-4xl font-bold text-[#030712]">500K+</h3>
+                        <p class="font-inter text-lg font-normal text-[#03071299]">Registered users</p>
+                    </div>
+                </div>
+                <div class="bg-white flex w-[300px] border-b-4 border-[#1DD100] rounded-3xl p-8 gap-4 items-center">
+                    <img src="Styles/images/ticket-cupon.png" alt="">
+                    <div class="">
+                        <h3 class="font-inter text-4xl font-bold text-[#030712]">1.7 lacks</h3>
+                        <p class="font-inter text-lg font-normal text-[#03071299]">Tickets sold</p>
+                    </div>
+                </div>
+                <div class="bg-white flex w-[300px] border-b-4 border-[#1DD100] rounded-3xl p-8 gap-4 items-center">
+                    <img src="Styles/images/stoppage.png" alt="">
+                    <div class="">
+                        <h3 class="font-inter text-4xl font-bold text-[#030712]">80K+</h3>
+                        <p class="font-inter text-lg font-normal text-[#03071299]">Rental partners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header banner ends -->
     </header>
     <main>
 
