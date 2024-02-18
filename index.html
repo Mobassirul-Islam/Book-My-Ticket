@@ -86,7 +86,7 @@
                 </div>
             </div>
             <!-- Banner cards -->
-            <div class="lg:flex justify-between items-center lg:absolute lg:-bottom-14 lg:left-40 lg:gap-6">
+            <div class="flex flex-col lg:flex-row justify-between items-center lg:absolute lg:-bottom-14 lg:left-40 lg:gap-6">
                 <div class="bg-white flex w-[300px] border-b-4 border-[#1DD100] rounded-3xl p-8 gap-4 items-center">
                     <img src="Styles/images/people.png" alt="">
                     <div class="">
@@ -175,34 +175,69 @@
             </div>
 
             <!-- Location card start -->
-            <div class="main-div">
-                <div class="left-div">
-                    <div class="flex justify-around items-center">
-                        <div class="flex items-center gap-4">
-                            <div>
-                                <img src="Styles/images/bus-logo.png" alt="">
+            <div class="container mx-auto mb-5">
+                <div
+                    class="rounded-3xl bg-[#FFFFFF] flex flex-col lg:flex-row pl-4 lg:pl-8 pb-4 lg:pb-8 mb-3 lg:mb-6 mx-5 lg:mx-0">
+                    <div class="left-div">
+                        <div class="flex flex-col lg:flex-row justify-between items-center mt-4 lg:mt-8 mb-3 lg:mb-6">
+                            <div class="flex items-center gap-4 mb-4 lg:mb-0">
+                                <div>
+                                    <img src="Styles/images/bus-logo.png" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="font-raleway text-xl lg:text-3xl font-bold text-[#030712]">StarLine
+                                        Paribahan
+                                    </h3>
+                                    <p class="font-inter text-base lg:text-lg font-normal text-[#03071299]">
+                                        Coach-009-WEB !
+                                        AC_Business
+                                    </p>
+                                </div>
                             </div>
-                            <div>
-                                <h3 class="font-raleway text-3xl font-bold text-[#030712]">StarLine Paribahan</h3>
-                                <p class="font-inter text-lg font-normal text-[#03071299]">Coach-009-WEB ! AC_Business
+                            <div class="bg-[#1DD10026] flex justify-center items-center gap-x-2 px-4 py-3 rounded-xl">
+                                <img src="Styles/images/seat-green.png" alt="">
+                                <p class="font-inter lg:text-lg font-medium text-[#1DD100]"><span>40</span> Seats Left
                                 </p>
                             </div>
                         </div>
-                        <div class="bg-[#1DD10026] flex justify-center items-center gap-x-2 px-4 py-3 rounded-xl">
-                            <img src="Styles/images/seat-green.png" alt="">
-                            <p class="font-inter text-lg font-medium text-[#1DD100]"><span>40</span> Seats Left</p>
+                        <div class="bg-[#F7F8F8] rounded-3xl p-4 lg:p-8 mr-4 lg:mr-0">
+                            <div class="flex justify-between items-center mb-6">
+                                <p class="font-raleway lg:text-lg font-semibold text-[#03071299]">Route</p>
+                                <p class="font-raleway lg:text-lg font-semibold text-[#030712]">Dhaka - Sylhet</p>
+                            </div>
+                            <hr class="border border-dashed mb-6">
+                            <div class="flex justify-between items-center mb-6">
+                                <p class="font-raleway lg:text-lg font-semibold text-[#03071299]">Departure Time</p>
+                                <p class="font-raleway lg:text-lg font-semibold text-[#030712]">9:00 PM</p>
+                            </div>
+                            <hr class="border border-dashed mb-6">
+                            <div class="flex flex-col lg:flex-row justify-around items-center gap-y-4 lg:gap-x-6">
+                                <input
+                                    class="font-inter text-[#030712CC] text-base font-medium outline-none p-4 bg-[#0307120D] rounded-xl"
+                                    type="text" placeholder="Boarding Point - Laxmipur">
+                                <input
+                                    class="font-inter text-[#030712CC] text-base font-medium outline-none p-4 bg-[#0307120D] rounded-xl"
+                                    type="text" placeholder="Dropping Point - Bogura">
+                                <input
+                                    class="font-inter text-[#030712CC] text-base font-medium outline-none p-4 bg-[#0307120D] rounded-xl"
+                                    type="text" placeholder="Est. Time - 11 Hour">
+                            </div>
                         </div>
                     </div>
-                    <div>
-
+                    <img class="hidden lg:block ml-6 mr-11" src="Styles/images/info-devider.png" alt="">
+                    <hr class="block my-4 mr-4 lg:hidden border border-dashed">
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="Styles/images/fare.png" alt="">
+                        <h3 class="font-raleway text-3xl font-bold text-[#030712] mt-6 mb-3">550 Taka</h3>
+                        <p class="font-raleway text-2xl font-semibold text-[#03071299]">Per Seat</p>
                     </div>
-                </div>
-                <img src="" alt="">
-                <div>
-
                 </div>
             </div>
             <!-- Location card end -->
+
+            <!-- Seats part stars -->
+
+            <!-- Seats part ends -->
         </section>
         <!-- Bus info section end -->
     </main>
