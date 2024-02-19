@@ -3,7 +3,7 @@ function scrollToBuyTicket() {
 	window.scrollTo(0, 1500);
 }
 
-// Seat counts and limits seat selection calculates selected seat/s total and grand total price 
+// Seat counts and limits seat selection calculates selected seat/s total and grand total price
 const totalSeats = 40;
 let selectedSeat = [];
 let selectedSeatName = [];
@@ -118,3 +118,12 @@ couponBtn.addEventListener("click", function (event) {
 		alert("Invalid Coupon");
 	}
 });
+
+// Validating form section
+const nextBtn = document.getElementById("next-btn");
+const phoneNumber = document.getElementById("phone-number");
+if (selectedSeat.length > 0 || phoneNumber.value == Number) {
+	nextBtn.removeAttribute("disabled");
+} else {
+	nextBtn.setAttribute("disabled", true);
+}

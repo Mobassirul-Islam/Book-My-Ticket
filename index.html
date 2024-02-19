@@ -485,7 +485,8 @@
                                 <hr class="border mb-4">
                                 <div class="flex justify-between items-center mb-4">
                                     <h3 class="font-inter text-base font-medium text-[#030712]">Total Price</h3>
-                                    <h3 id="total-price" class="font-inter text-base font-medium text-[#030712]">BDT 0</h3>
+                                    <h3 id="total-price" class="font-inter text-base font-medium text-[#030712]">BDT 0
+                                    </h3>
                                 </div>
                                 <div id="coupon-input-container" class="mb-4">
                                     <input
@@ -496,7 +497,8 @@
                                 </div>
                                 <div class="flex justify-between items-center">
                                     <h3 class="font-inter text-base font-medium text-[#030712]">Grand Total</h3>
-                                    <h3 id="grand-total" class="font-inter text-base font-medium text-[#030712]">BDT 0</h3>
+                                    <h3 id="grand-total" class="font-inter text-base font-medium text-[#030712]">BDT 0
+                                    </h3>
                                 </div>
                             </div>
                         </div>
@@ -504,7 +506,7 @@
                             <h3 class="font-inter text-base font-semibold text-[#030712] mb-4">Passenger Name*</h3>
                             <input
                                 class="w-full border border-[#0307121A] rounded-xl outline-none text-base font-normal text-[#03071266] bg-white py-5 px-6 mb-6"
-                                placeholder="Enter your name" type="text" name="" id="">
+                                placeholder="Enter your name" type="text" name="" id="phone-number">
                             <h3 class="font-inter text-base font-semibold text-[#030712] mb-4">Phone Number*</h3>
                             <input
                                 class="w-full border border-[#0307121A] rounded-xl outline-none text-base font-normal text-[#03071266] bg-white py-5 px-6 mb-6"
@@ -513,7 +515,7 @@
                             <input
                                 class="w-full border border-[#0307121A] rounded-xl outline-none text-base font-normal text-[#03071266] bg-white py-5 px-6 mb-6"
                                 placeholder="Enter your email id" type="email" name="" id="">
-                            <button
+                            <button id="next-btn" disabled onclick="my_modal_4.showModal()"
                                 class="bg-[#1DD100] text-white text-xl font-raleway font-extrabold rounded-2xl px-8 py-5 w-full mb-6">Next</button>
                         </div>
                         <div class="">
@@ -524,6 +526,31 @@
                                         Policy</a></li>
                             </ul>
                         </div>
+                        <!-- Modal Body start -->
+                        <dialog id="my_modal_4" class="modal">
+                            <div class="modal-box w-auto lg:w-1/2 max-w-5xl py-3 lg:py-14">
+                                <div class="flex justify-center items-center">
+                                    <img src="Styles/images/success.png" alt="">
+                                </div>
+                                <h3 class="text-center my-5 lg:my-10 font-roboto font-bold text-2xl text-[#27AE60]">
+                                    SUCCESS!</h3>
+                                <div class="mb-5">
+                                    <p class="text-center font-roboto text-xl font-medium text-[#4A4A4A]">Thank you for
+                                        Booking Our Bus Seats.
+                                        We are working hard to find the best service and deals for you.</p>
+                                    <p class="text-center font-roboto text-xl text-[#4A4A4A] font-light mt-3">Shortly
+                                        you will find a confirmation in your email.</p>
+                                </div>
+                                <div class="modal-action flex justify-center items-center">
+                                    <form method="dialog">
+                                        <!-- if there is a button, it will close the modal -->
+                                        <button
+                                            class="text-white rounded-[32px] font-roboto text-xl font-medium bg-[#27AE60] py-4 px-20">Continue</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+                        <!-- Modal Body end -->
                     </div>
                 </div>
             </section>
