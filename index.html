@@ -458,46 +458,49 @@
                             <hr class="lg:flex border border-dashed mb-6">
                         </div>
                         <div class="bg-[#F7F8F8] rounded-xl p-8 mb-6">
-                            <div class="">
-                                <table id="seat-item" class="w-full">
-                                    <tr>
-                                        <td class="font-inter text-base font-medium text-[#030712]">Seat<Span id="selected-seat-number"
-                                                class="bg-[#1DD100] text-white rounded-lg">0</Span>
-                                        </td>
-                                        <td class="font-inter text-base font-medium text-[#030712]">Class</td>
-                                        <td class="font-inter text-base font-medium text-[#030712]">Price</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <hr class="border border-dashed">
-                                        </td>
-                                        <td>
-                                            <hr class="border border-dashed">
-                                        </td>
-                                        <td>
-                                            <hr class="border border-dashed">
-                                        </td>
-                                    </tr>
+                            <div id="price-list-container" class="">
+                                <table class="w-full">
+                                    <tbody id="seat-item">
+                                        <tr>
+                                            <td class="font-inter text-base font-medium text-[#030712]">Seat<Span
+                                                    id="selected-seat-number"
+                                                    class="bg-[#1DD100] text-white rounded-lg">0</Span>
+                                            </td>
+                                            <td class="font-inter text-base font-medium text-[#030712]">Class</td>
+                                            <td class="font-inter text-base font-medium text-[#030712]">Price</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <hr class="border border-dashed">
+                                            </td>
+                                            <td>
+                                                <hr class="border border-dashed">
+                                            </td>
+                                            <td>
+                                                <hr class="border border-dashed">
+                                            </td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                                 <hr class="border mb-4">
                                 <div class="flex justify-between items-center mb-4">
                                     <h3 class="font-inter text-base font-medium text-[#030712]">Total Price</h3>
-                                    <h3 class="font-inter text-base font-medium text-[#030712]">BDT 1100</h3>
+                                    <h3 id="total-price" class="font-inter text-base font-medium text-[#030712]">BDT 0</h3>
                                 </div>
-                                <div class="mb-4">
+                                <div id="coupon-input-container" class="mb-4">
                                     <input
                                         class="w-full font-inter text-sm font-normal bg-[#FFFFFF] text-[#03071266] rounded-xl py-5 px-3 outline-none"
-                                        type="text" name="" id="" placeholder="Have any coupon?">
-                                    <button
+                                        type="text" name="" id="coupon-input" disabled placeholder="Have any coupon?">
+                                    <button id="coupon-btn" disabled
                                         class="absolute -translate-x-20 translate-y-1.5 text-base font-semibold bg-[#1DD100] px-4 py-3 rounded-lg text-white">Apply</button>
                                 </div>
                                 <div class="flex justify-between items-center">
                                     <h3 class="font-inter text-base font-medium text-[#030712]">Grand Total</h3>
-                                    <h3 class="font-inter text-base font-medium text-[#030712]">BDT 1100</h3>
+                                    <h3 id="grand-total" class="font-inter text-base font-medium text-[#030712]">BDT 0</h3>
                                 </div>
                             </div>
                         </div>
-                        <form>
+                        <div>
                             <h3 class="font-inter text-base font-semibold text-[#030712] mb-4">Passenger Name*</h3>
                             <input
                                 class="w-full border border-[#0307121A] rounded-xl outline-none text-base font-normal text-[#03071266] bg-white py-5 px-6 mb-6"
@@ -512,7 +515,7 @@
                                 placeholder="Enter your email id" type="email" name="" id="">
                             <button
                                 class="bg-[#1DD100] text-white text-xl font-raleway font-extrabold rounded-2xl px-8 py-5 w-full mb-6">Next</button>
-                        </form>
+                        </div>
                         <div class="">
                             <ul class="flex justify-around items-center list-none">
                                 <li><a href="" class="font-inter text-base font-normal text-[#03071299]">Terms
@@ -570,6 +573,7 @@
 
     <!-- JS link below -->
     <script src="JS/script.js"></script>
+    <script src="JS/index.js"></script>
 </body>
 
 </html>
