@@ -506,7 +506,7 @@
                             <h3 class="font-inter text-base font-semibold text-[#030712] mb-4">Passenger Name*</h3>
                             <input
                                 class="w-full border border-[#0307121A] rounded-xl outline-none text-base font-normal text-[#03071266] bg-white py-5 px-6 mb-6"
-                                placeholder="Enter your name" type="text" name="" id="">
+                                placeholder="Enter your name" type="text" name="" id="passenger-name-input">
                             <h3 class="font-inter text-base font-semibold text-[#030712] mb-4">Phone Number*</h3>
                             <input
                                 class="w-full border border-[#0307121A] rounded-xl outline-none text-base font-normal text-[#03071266] bg-white py-5 px-6 mb-6"
@@ -514,7 +514,7 @@
                             <h3 class="font-inter text-base font-semibold text-[#030712] mb-4">Email ID</h3>
                             <input
                                 class="w-full border border-[#0307121A] rounded-xl outline-none text-base font-normal text-[#03071266] bg-white py-5 px-6 mb-6"
-                                placeholder="Enter your email id" type="email" name="" id="">
+                                placeholder="Enter your email id" type="email" name="" id="email-input">
                             <button id="next-btn" disabled onclick="my_modal_4.showModal()"
                                 class="bg-[#1DD100] text-white text-xl font-raleway font-extrabold rounded-2xl px-8 py-5 w-full mb-6">Next</button>
                         </div>
@@ -544,7 +544,7 @@
                                 <div class="modal-action flex justify-center items-center">
                                     <form method="dialog">
                                         <!-- if there is a button, it will close the modal -->
-                                        <button
+                                        <button onclick="window.location.reload();"
                                             class="text-white rounded-[32px] font-roboto text-xl font-medium bg-[#27AE60] py-4 px-20">Continue</button>
                                     </form>
                                 </div>

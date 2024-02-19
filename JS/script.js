@@ -132,3 +132,12 @@ document
 			document.getElementById("next-btn").setAttribute("disabled", true);
 		}
 	});
+
+// To clear the phone number input field value after selecting seat/s
+for (const i of selectSeats) {
+	i.addEventListener('click', function(){
+		document.getElementById("phone-number-input").value = "";
+		document.getElementById("passenger-name-input").value = "";
+		document.getElementById("email-input").value = "";
+	})
+}
