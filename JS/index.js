@@ -3,14 +3,13 @@ function scrollToBuyTicket() {
 	window.scrollTo(0, 1500);
 }
 
-// Seat count
+// Seat counts and limits seat selection calculates selected seat/s total and grand total price 
 const totalSeats = 40;
 let selectedSeat = [];
 let selectedSeatName = [];
 let totalPrice = 0;
 let grandTotal = 0;
 let discount = 0;
-
 
 const selectSeats = document.querySelectorAll(".seats");
 for (const selectSeat of selectSeats) {
@@ -71,16 +70,51 @@ for (const selectSeat of selectSeats) {
 // Validating the coupon names right or not and hide the apply btn after claiming one coupon.
 const couponBtn = document.getElementById("coupon-btn");
 couponBtn.addEventListener("click", function (event) {
-	const couponInput = document.getElementById('coupon-input').value;
-    if (couponInput === "NEW15" || couponInput === "Couple 20"){
-        if(couponInput === "NEW15"){
-            discount = totalPrice * 0.15;
-            
-        }
-        const couponInputContainer = document.getElementById('coupon-input-container');
-        couponInputContainer.classList.add('hidden');
-    }
-    else{
-        alert('Invalid Coupon');
-    }
+	const couponInput = document.getElementById("coupon-input").value;
+	if (couponInput === "NEW15" || couponInput === "Couple 20") {
+		if (couponInput === "NEW15") {
+			discount = totalPrice * 0.15;
+		}
+		if (couponInput === "Couple 20") {
+			discount = totalPrice * 0.2;
+		}
+
+		const priceListContainer = document.getElementById("price-list-container");
+
+		// Displays discount after total price
+		const div = document.createElement("div");
+		div.classList.add("flex", "justify-between", "items-center", "my-4");
+		const firstH3 = document.createElement("h3");
+		firstH3.classList.add(
+			"font-inter",
+			"text-base",
+			"font-medium",
+			"text-[#030712]"
+		);
+		firstH3.innerText = "Discount";
+		const secondH3 = document.createElement("h3");
+		secondH3.classList.add(
+			"font-inter",
+			"text-base",
+			"font-medium",
+			"text-[#030712]"
+		);
+		secondH3.innerText = discount;
+		div.appendChild(firstH3);
+		div.appendChild(secondH3);
+		const couponInputDiv = document.getElementById("coupon-input-container");
+		priceListContainer.insertBefore(div, couponInputDiv);
+
+		// Displays grand total price after claiming any valid coupon
+		grandTotal = totalPrice - discount;
+		document.getElementById("grand-total").innerText = grandTotal;
+
+		// Hides the coupon input div element
+		const couponInputContainer = document.getElementById(
+			"coupon-input-container"
+		);
+		couponInputContainer.classList.add("hidden");
+	} else {
+		alert("Invalid Coupon");
+	}
 });
